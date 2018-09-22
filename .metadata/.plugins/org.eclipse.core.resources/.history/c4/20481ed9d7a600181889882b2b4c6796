@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+public class pattern4 {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		
+		int n = scn.nextInt();
+		
+		int cntr=0;
+		int z = 1;
+		while(cntr<=n) {
+			int col = 0;
+			while(col<=cntr) {
+				System.out.print(z+" ");
+				
+				z=z*(cntr-col)/(col+1);
+				col++;
+				
+			}
+			System.out.println();
+			cntr++;
+		}
+
+	}
+
+}

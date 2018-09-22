@@ -1,0 +1,42 @@
+
+public class subsets {
+
+	public static void main(String[] args) {
+		int[] arr = { 10, 20, 30 };
+		subset(arr);
+	}
+
+	public static void subset(int[] arr) {
+		for (int i = 0; i < 8; i++) {
+			
+//			bitmask = 1 << 1;
+//			if ((i & bitmask) == 0) {
+//				System.out.println("off");
+//			} else {
+//				System.out.println("on");
+//			}
+//			bitmask = 1 << 0;
+//			if ((i & bitmask) == 0) {
+//				System.out.println("off");
+//			} else {
+//				System.out.println("on");
+//			}
+
+		}
+	}
+	
+	private static boolean IsBitSet(int bitPosition, int num) {
+		
+		boolean  flag = false;
+		
+		int bitmask = 1 << 2;
+		if ((i & bitmask) == 0) {
+			System.out.println("off");
+		} else {
+			System.out.println("on");
+		}
+		
+		return flag;
+	}
+
+}

@@ -1,0 +1,41 @@
+import java.util.Scanner;
+
+public class inversesecond {
+
+	public static void main(String[] args) {
+		
+		Scanner scn = new Scanner(System.in);
+        int n =scn.nextInt();
+        int[] arr = new int[n];
+        int[] inv = new int[arr.length];
+        boolean bn=false;
+        for(int i =0;i<arr.length;i++){
+            arr[i]=scn.nextInt();
+        }
+        for(int i =0;i<arr.length;i++){
+            arr[i]=scn.nextInt();
+        }
+        inv(arr,inv,bn);
+        System.out.println(bn);
+//        for(int i =0;i<arr.length;i++) {
+//        inv[arr[i]]=i;
+//        }
+//        for (int val : inv) {
+//			System.out.print(val + " ");
+//		}
+//        
+//        for(int i=0;i<arr.length;i++) {
+//        	if(inv[i]==arr[i]) {
+//        		bn=true;
+//        	}else {bn=false;}
+//        }System.out.println(bn);
+	}public static void inv(int[] arr, int[] inv,boolean bn ) {
+		 for(int i =0;i<arr.length;i++) {
+			 if(inv[arr[i]]==i) {
+				 bn=true;
+			 }else {bn=false;}
+		 }
+		 
+	}
+
+}

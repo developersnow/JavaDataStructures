@@ -1,0 +1,21 @@
+
+public class recursion {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		pdiwskip(6);
+	}//expectation=>
+	//faith=>
+	public static void pdiwskip(int n ) {
+		if(n==0) {
+			return;
+		}
+		if(n%2 != 0) {
+		System.out.println(n);}
+		pdiwskip(n-1);
+		if(n%2==0) {
+		System.out.println(n);}
+	}
+
+}

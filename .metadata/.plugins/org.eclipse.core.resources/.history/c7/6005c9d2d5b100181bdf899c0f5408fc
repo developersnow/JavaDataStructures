@@ -1,0 +1,22 @@
+
+public class maze1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int[][] maze = {
+				{0,0,1,0},
+				{1,0,0,0},
+				{0,0,0,0},
+				{1,0,1,0}
+		};
+		
+		
+		for(int row = 0;row<maze.length;row++){
+			if(maze[i]==0) {
+				
+			}
+		}
+
+	}
+
+}

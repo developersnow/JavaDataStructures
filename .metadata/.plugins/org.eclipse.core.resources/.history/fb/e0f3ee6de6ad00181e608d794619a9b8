@@ -1,0 +1,16 @@
+
+public class temp {
+
+	public static void main(String[] args) {
+		int min= 0;
+		int max = 200;
+		int far =0;
+		while(far != max) {
+			far=far+20;
+			int cel = (5/9)*(far-32);
+			System.out.println(far+" = "+cel);
+		}
+
+	}
+
+}

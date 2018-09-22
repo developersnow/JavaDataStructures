@@ -1,0 +1,41 @@
+
+public class recursionwitharrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] arr = { 12, 23, 56, 15, 6 };
+
+//		displayR(arr, 0);
+		System.out.println(max(arr, 0));
+	}
+
+	public static void displayR(int[] arr, int vidx) {
+
+		if (vidx == arr.length) {
+			return;
+		}
+
+		displayR(arr, vidx + 1);
+		System.out.println(arr[vidx]);
+	}
+
+	public static int max(int[] arr, int vidx) {
+
+		if (vidx == arr.length-1) {
+			return arr[vidx];
+		}
+		int misa = max(arr,vidx+1);
+		if (misa > arr[vidx]) {
+			return misa;
+		} else {
+			return arr[vidx];
+		}
+
+	}
+
+//	public static boolean find(int[] arr, int data, int vidx) {
+//
+//	}
+
+}

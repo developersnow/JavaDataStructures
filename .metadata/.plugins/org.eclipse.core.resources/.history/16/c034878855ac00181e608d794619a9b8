@@ -1,0 +1,11 @@
+
+public class bitman1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		byte b  =(byte)129;
+		System.out.println(b);
+
+	}
+
+}

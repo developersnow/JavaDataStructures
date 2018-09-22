@@ -1,0 +1,21 @@
+
+public class recursionwitharrays {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int[] arr = { 12, 23, 56, 15, 6 };
+
+		displayR(arr,0);
+	}
+
+	public static void displayR(int[] arr, int vidx) {
+
+		if(vidx==0) {
+			return;
+		}
+		System.out.println(arr[vidx]);
+		displayR(arr,vidx+1);
+	}
+
+}

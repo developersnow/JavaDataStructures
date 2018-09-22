@@ -1,0 +1,32 @@
+package test;
+
+import java.util.Scanner;
+
+public class gcd {
+
+	public static void main(String[] args) {
+		Scanner scn = new Scanner(System.in);
+		
+		int x = scn.nextInt();
+		int y = scn.nextInt();
+		int divisor;
+		int divident;
+		int remain;
+		if(x>y) {
+			divisor=y;
+			divident=x;
+		}else {
+			divisor=x;
+			divident=y;}
+		remain=divident%divisor;
+		
+		while(remain != 0) {
+			remain=divident%divisor;
+			divident=divisor;
+			divisor=remain;
+		}
+		System.out.println(divisor);
+		System.out.println();
+	}
+
+}

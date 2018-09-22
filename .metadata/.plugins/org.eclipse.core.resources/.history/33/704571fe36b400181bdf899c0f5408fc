@@ -1,0 +1,37 @@
+
+public class recursion1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		int x=5;
+		int n =2;
+		factorial(x);
+	}
+	public static void factorial(int x) {
+		if(x==0) {
+			return;
+		}
+		int fac=1;
+		factorial(x-1);
+		fac =fac*x;
+		System.out.println(fac);
+	}
+	public static void power(int x,int n ) {
+		if(x==0) {
+			return;
+		}
+		factorial(x-1);
+		
+		
+	}
+	public static void powersmart(int x,int n ) {
+		if(x==0) {
+			return;
+		}
+		factorial(x-1);
+		
+		
+	}
+
+}

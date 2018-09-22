@@ -1,0 +1,24 @@
+public class prac {
+
+	public static void main(String[] args) {
+		int[] arr = { 10, 20, 30 };
+		subset(arr);
+	}
+
+	public static void subset(int[] arr) {
+		for (int i = 0; i < (1<<arr.length); i++) {
+			for(int j=arr.length-1;j>=0;j++){
+				int b2c=arr.length-j;
+				int bm=1<<b2c;
+				if((i & (bm))!= 0) {
+					System.out.print(arr[i]+" ");
+				}
+			}System.out.println();
+		}
+	}
+
+
+
+
+
+}

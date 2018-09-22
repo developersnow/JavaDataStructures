@@ -1,0 +1,13 @@
+
+public class subsets {
+
+	public static void main(String[] args) {
+		int[] arr = { 10, 20, 30 };
+		subset(arr);
+	}
+
+	public static void subset(int[] arr) {
+		for(int i = 0)
+	}
+
+}
